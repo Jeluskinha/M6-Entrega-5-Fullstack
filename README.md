@@ -72,8 +72,9 @@ POSTGRES_USER=MeuNome
 POSTGRES_PWD=MinhaSenha
 POSTGRES_DB=MeuBancoDeDados
 SECRET_KEY=MinhaSecretKey
-PORT=PortaEx:3000
+PORT=3000
 ```
+Nota: PORT precisa ser 3000 para ser compativel com o localhost referenciado no front-end
 
 ### 4. Aplicando migrações
 
