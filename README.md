@@ -101,7 +101,9 @@ yarn dev
 
 E e acessar o projeto em:
 
-**https://contacts-seven-vert.vercel.app/**
+**https://front-end-jeluskinha.vercel.app/**
+NOTA: você precisa estar com o back-end on-line para experienciar o projeto
+
 
 ### 6. Rodando no Front
 
