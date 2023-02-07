@@ -68,10 +68,11 @@ Defina suas variáveis de ambiente de acordo com suas credenciais do PostgreSQL,
 **Exemplo do .env**
 
 ```
-POSTGRES_USER=Roberto
-POSTGRES_PWD=minhasenha
-POSTGRES_DB=meubancodedados
-SECRET_KEY=minhasecretkey
+POSTGRES_USER=MeuNome
+POSTGRES_PWD=MinhaSenha
+POSTGRES_DB=MeuBancoDeDados
+SECRET_KEY=MinhaSecretKey
+PORT=PortaEx:3000
 ```
 
 ### 4. Aplicando migrações
