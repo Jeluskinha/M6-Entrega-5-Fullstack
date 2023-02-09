@@ -24,6 +24,7 @@ function LoginModal() {
               id="email"
               {...register("email")}
               placeholder="exemplo@gmail.com"
+              required
             />
           </label>
           <label>
@@ -33,6 +34,7 @@ function LoginModal() {
               id="password"
               {...register("password")}
               placeholder="Senhaforte@1234"
+              required
             />
           </label>
           <button>Logar</button>

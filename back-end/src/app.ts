@@ -4,10 +4,13 @@ import { AppError } from "./errors/appError"
 import clientRoutes from './routes/clients.routes'; 
 import sessionRoutes from './routes/sessions.routes';
 import contactsRoutes from "./routes/contacts.routes";
+import cors from 'cors';
 
 const app = express();
 
 app.use(express.json());
+
+app.use(cors())
 
 app.use('/client', clientRoutes)
 app.use('/session', sessionRoutes)
@@ -27,5 +30,5 @@ app.use((error: Error, request: Request, response: Response, _: NextFunction) =>
   })
 })
 
-app.listen(3000);
+app.listen(process.env.PORT);
 

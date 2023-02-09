@@ -6,29 +6,29 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function RegisterContactModal() {
 
-  const { registerContact, setOpenModalregister } = useContext(AuthContext)
+  const { registerContact, setOpenModalregisterContact } = useContext(AuthContext)
 
   const { register, handleSubmit } = useForm()
 
   return (
     <RegisterModalStyle>
       <div>
-        <figure onClick={()=> setOpenModalregister(false)}>
+        <figure onClick={()=> setOpenModalregisterContact(false)}>
             <AiOutlineCloseCircle />
         </figure>
         <h2>Cadastrar novo contato</h2>
         <form onSubmit={handleSubmit(registerContact)}>
         <label>
           <h4>nome do contato</h4>
-          <input type="text" id="name" {...register("name")} placeholder="nome completo"/>
+          <input type="text" id="name" {...register("name")} placeholder="nome completo" required/>
         </label>
         <label>
           <h4>Informe o email</h4>
-          <input type="text" id="email" {...register("email")} placeholder="exemplo@gmail.com"/>
+          <input type="text" id="email" {...register("email")} placeholder="exemplo@gmail.com" required/>
         </label>
         <label>
           <h4>Insira o telefone telefone</h4>
-          <input type="tel" id="phone" {...register("phone")} placeholder="exemplo@gmail.com"/>
+          <input type="tel" id="phone" {...register("phone")} placeholder="exemplo@gmail.com" required/>
         </label>
         <button>Cadastrar</button>
         </form>
